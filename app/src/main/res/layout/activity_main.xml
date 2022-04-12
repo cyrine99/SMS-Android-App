@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl">
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        >
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginStart="65dp"
+            android:text="@string/smsTextView"
+            android:textColor="#ffe993"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/chat"
+            android:contentDescription="TODO" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextPhone"
+            android:hint="@string/editTextPhone"
+            android:inputType="phone"
+            android:layout_below="@+id/imageButton"
+            android:layout_centerHorizontal="true"
+            android:autofillHints="" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:id="@+id/editTextMessage"
+            android:layout_below="@+id/editTextPhone"
+            android:layout_alignStart="@+id/editTextPhone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="ادخل رسالتك"
+            android:inputType="text"
+            android:autofillHints="" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/butSendText"
+            android:id="@+id/btnSendSMS"
+            android:layout_below="@+id/editTextMessage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:onClick="sendMessage"
+            />
+
+    </RelativeLayout>
+</ScrollView>
